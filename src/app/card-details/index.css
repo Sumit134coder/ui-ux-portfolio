@@ -49,6 +49,19 @@
 
 }
 
+.complete-icon {
+    animation: 2s oscilate alternate infinite;
+}
+
+@keyframes oscilate {
+    from {
+        scale: 1.2;
+    }  
+    to {
+        scale: 1;
+    }  
+}
+
 .btn{
     text-align: center;
     border-radius: 10px;
