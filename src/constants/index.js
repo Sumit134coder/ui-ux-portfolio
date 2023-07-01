@@ -1,5 +1,5 @@
 const passwordRules = [
-  { title: "Should contain a special character", value: false },
+  { title: "Should contain Special characters", value: false },
   { title: "Should contain Numeric characters", value: false },
   { title: "Should contain Uppercase letters", value: false },
   { title: "Should contain Lowercase letters", value: false },

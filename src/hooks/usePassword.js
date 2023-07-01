@@ -11,7 +11,7 @@ const usePassword = () => {
     const isRulesSelected = rules.filter((rule) => rule.value === true).length;
 
     if (isRulesSelected === 0) {
-      setError("Please select atleast one checkbox");
+      setError("Please select atleast one rule");
       setPassword("");
       return null;
     }

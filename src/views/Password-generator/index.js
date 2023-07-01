@@ -37,7 +37,7 @@ const PassGenerator = () => {
     <div className="flex justify-center items-center text-white w-full h-full bg-[#DAFFFB]">
       <div className="grid grid-cols-1 md:grid-cols-2 rounded-[3rem] w-auto m-4 md:m-0 lg:w-1/2 lg:h-2/3 h-auto shadow-xl">
         {/* --pass container--- */}
-        <div className="rounded-[2rem] pass-container flex flex-col justify-between items-center">
+        <div className="rounded-[2rem] bg-gradient p-[1rem] flex flex-col justify-between items-center">
           <h1 className="text-center font-semibold">Password</h1>
 
           {initial ? (
