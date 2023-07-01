@@ -21,6 +21,7 @@ input[type=number] {
 
 .container {
     background-color: var(--Light-grey);
+    width: 100%;
 }
 
 .card {
@@ -32,6 +33,25 @@ input[type=number] {
     border-radius: 50%;
     padding: 1rem;
 }
+
+.age-btn:hover {
+    animation: 1s bounce infinite linear;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    70%{
+        transform: translateY(10px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
 .age-form-input{
     display: flex;
     flex-direction: column;
@@ -83,4 +103,21 @@ input[type=number] {
 
 .label-error {
     color: var(--Light);
+}
+
+@media screen and (max-width: 768px) {
+     .age-input {
+        width: 5rem;
+     } 
+
+     .age-btn {
+        padding: 10px;
+        position: absolute;
+        right: 40%;
+    }
+
+    .error-text {
+        font-size: 10px;
+        bottom: -1rem;
+    }
 }

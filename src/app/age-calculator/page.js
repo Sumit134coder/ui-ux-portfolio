@@ -15,9 +15,9 @@ const validationSchema = Yup.object({
 })
 
 const initialValue = {
-  day: 0,
-  month: 0,
-  year: 0,
+  day: '',
+  month: '',
+  year: '',
 }
 
 const AgeCalculator = () => {
@@ -37,15 +37,15 @@ const diffDays = moment().diff(moment(str), 'days') % 30;
     console.log(diffYears , diffMonths ,diffDays)
 
     setData({
-      year: diffYears,
-      month: diffMonths,
-      day: diffDays
+      year: Math.abs(diffYears),
+      month: Math.abs(diffMonths),
+      day: Math.abs(diffDays)
     })
   }
 
   return (
-    <div className='flex justify-center items-center min-h-screen h-screen container'>
-        <div className=' h-auto lg:min-h-2/3 lg:w-1/2 card rounded-[2rem]  rounded-br-[6rem] p-8'>
+    <div className='flex justify-center items-center min-h-screen w-screen lg:h-screen container p-4 m-0'>
+        <div className=' h-auto w-full lg:min-h-2/3 lg:w-1/2 card rounded-[2rem]  rounded-br-[6rem] p-8'>
            <div>
               {/* --form for input fields---- */}
               <Formik
@@ -74,10 +74,10 @@ const diffDays = moment().diff(moment(str), 'days') % 30;
                           <ErrorMessage component='div' name='year' className="error-text" />
                         </div>
                       </div>
-                      <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-4 my-6 mt-8 lg:mt-2 relative">
                         <hr className="flex-1"/>
                         <button type='submit' title='submit' className="age-btn">
-                          <Image src={arrow} alt='Arrow' />
+                          <Image src={arrow} alt='Arrow' className="h-6 w-6 md:h-auto" />
                         </button>
                       </div>
                     </Form>
@@ -85,7 +85,7 @@ const diffDays = moment().diff(moment(str), 'days') % 30;
                 }
               </Formik>
            </div>
-           <div className="text-[5rem] font-black italic leading-tight">
+           <div className="text-[3rem] lg:text-[5rem] font-black italic leading-tight">
             <div>
               <span className="hero-text">{data?.year || '--'}</span> years
             </div>
