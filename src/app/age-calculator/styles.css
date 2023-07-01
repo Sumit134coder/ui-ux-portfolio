@@ -1,0 +1,86 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+:root{
+--Purple: hsl(259, 100%, 65%);
+--Light: hsl(0, 100%, 67%);
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+}
+
+.container {
+    background-color: var(--Light-grey);
+}
+
+.card {
+    background-color: var(--White);
+}
+
+.age-btn {
+    background-color: var(--Purple);
+    border-radius: 50%;
+    padding: 1rem;
+}
+.age-form-input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.error-text{
+    color: var(--Light);
+    position: absolute;
+    font-size: 14px;
+    bottom: -1.5rem;
+    font-weight: 500;
+    right: 0;
+}
+
+.hero-text{
+    color: var(--Purple);
+}
+
+.age-input{
+    border-radius: 10px;
+    border: 2px solid var(--Light-grey);
+    outline: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: 8rem;
+    padding: 6px 10px ;
+}
+
+.age-input-valid {
+    border: 2px solid var(--Light-grey);
+}
+
+.age-input-error {
+    border: 2px solid var(--Light);
+}
+
+.label{
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 6px;
+  letter-spacing: 3px;
+  display: block;
+}
+
+.label-valid {
+    color: var(--Smokey-grey);
+}
+
+.label-error {
+    color: var(--Light);
+}
