@@ -15,6 +15,11 @@ const spaceGrostesk = Space_Grotesk({
   weight: ["300", "500"],
 });
 
+export const metadata = {
+  title : 'Card Page',
+  description: 'A UI based card component'
+}
+
 const CardDetails = () => {
   const [cardDetails, setCardDetails] = useState({});
   const [submitted, setSubmitted] = useState(false);
