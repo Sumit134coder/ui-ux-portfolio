@@ -1,3 +1,7 @@
+import passGen from '../../public/Home/pass-generator.png';
+import ageCal from '../../public/Home/age-calculator.png';
+import payment from '../../public/Home/card-details.png';
+
 const passwordRules = [
   { title: "Should contain Special characters", value: false },
   { title: "Should contain Numeric characters", value: false },
@@ -18,6 +22,30 @@ const passwordFacts = [
   "Security Breaches: Stay informed about security breaches that occur on websites or services you use. If a breach occurs, change your password immediately to protect your account."
 ];
 
+const projectList = [
+  {
+    imgSrc: payment,
+    heading: 'Card Info Component',
+    description: 'A frontendMentor challenge to take users card information',
+    href: '/card-details',
+    tags: ['UI' , 'FrontendMentor.io']
+  },
+  {
+    imgSrc: ageCal,
+    heading: 'Date Differnce',
+    description: 'A frontendMentor challenge to display date difference between present and entered date',
+    href: '/age-calculator',
+    tags: ['UI' , 'FrontendMentor.io']
+  },
+  {
+    imgSrc: passGen,
+    heading: 'Pasword Generator',
+    description: 'A react component mostly asked in interviews for random password generation',
+    href: '/password-generator',
+    tags: ['UX', 'Project']
+  },
+]
+
 export {
-    passwordRules, passwordFacts
+    passwordRules, passwordFacts , projectList
 }
