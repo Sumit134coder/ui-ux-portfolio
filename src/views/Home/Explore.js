@@ -7,7 +7,7 @@ const Explore = () => {
     <div className='mx-6 md:mx-[2rem] text-white'>
         <div>
           <h1 className='text-[2rem] font-bold'>Explore</h1>
-          <p className='text-[1.2rem]'>Checkout some of the projects:</p>
+          <p className='text-[1.2rem] font-semibold'>Checkout some of my projects:</p>
         </div>
         {/* ---container--- */}
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-[2rem] mt-[2rem]'>

@@ -10,7 +10,7 @@ const Card = ({
   href = "",
 }) => {
   return (
-    <div className="border-2 rounded-xl p-3 bg-white text-[#A41108]">
+    <div className="border-2 rounded-xl p-3 bg-white text-[#A41108] transition hover:shadow-xl hover:-translate-y-3">
       <div className="relative">
         <Image
           src={imgSrc}
@@ -39,7 +39,7 @@ const Card = ({
       </div>
 
       <div className="flex justify-end">
-        <Link href={href} className="bg-[#A41108] text-white rounded-full py-3 px-6 font-semibold">
+        <Link href={href} className="bg-[#A41108] text-white rounded-full py-3 px-6 font-semibold hover:shadow-lg transition">
           View
         </Link>
       </div>

@@ -1,10 +1,7 @@
 .blur {
-    background: rgba( 255, 255, 255, 0.3 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 8.5px );
--webkit-backdrop-filter: blur( 8.5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(42, 43, 56, 0.5);
+  border: 2px solid rgb(42, 43, 55);
+  backdrop-filter: blur(104px);
 }
 
 
@@ -29,5 +26,32 @@ background-size: 300% 300%;
     }
     100% {
       background-position: 0px 50%;
+    }
+  }
+ 
+ .portfolio-link {
+    transition: 3s ease-in-out;
+ } 
+
+  .portfolio-link {
+    color: black;
+    animation : 5s jump infinite linear;
+  }
+
+  @keyframes jump {
+    0% , 25% {
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(-10px);
+        scale: 1.01;
+    }
+
+    50%{
+        transform:translateY(0);
+    }
+
+    100%{
+        transform:translateY(0);
     }
   }
