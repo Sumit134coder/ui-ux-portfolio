@@ -1,0 +1,25 @@
+{
+    "name": "root",
+    "isFolder": true,
+    "items" : [
+        {
+          "name":"components",
+          "isFolder":true,
+          "items":[
+            {
+                "name":"file Explroer",
+                "isFolder":true,
+                "items":[]
+              },
+              {
+                  "name":"index.html",
+                  "isFolder":false
+              }
+          ]
+        },
+        {
+            "name":"index.html",
+            "isFolder":false
+        }
+    ]
+}
