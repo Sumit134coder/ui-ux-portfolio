@@ -1,4 +1,5 @@
 import EventCaptureSection from "./components/EventCaptureSection";
+import ThrottleOptions from "./components/ThrottleOptions";
 
 export const metadata = {
   title: "Event throttling",
@@ -20,7 +21,7 @@ const EventThrottle = () => {
         </p>
       </div>
       <div className="flex flex-col items-center space-y-4 my-4 border-2 w-3/4 md:w-2/3 mx-auto">
-
+      <ThrottleOptions />
       <EventCaptureSection />
       </div>
     </div>
